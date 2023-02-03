@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "granito.consumer.api", "granito.consumer.api\granito.consumer.api.csproj", "{7480D69F-C8F3-4BC6-9057-8A4E36A22612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "granito.consumer.domain", "granito.consumer.domain\granito.consumer.domain.csproj", "{7DE955F5-EAFB-41D9-B061-E3BF37D17F1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "granito.consumer.bootstrapper", "granito.consumer.bootstrapper\granito.consumer.bootstrapper.csproj", "{5A4AE0E4-49AB-4898-8907-28AADB4669E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7480D69F-C8F3-4BC6-9057-8A4E36A22612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7480D69F-C8F3-4BC6-9057-8A4E36A22612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7480D69F-C8F3-4BC6-9057-8A4E36A22612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7480D69F-C8F3-4BC6-9057-8A4E36A22612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE955F5-EAFB-41D9-B061-E3BF37D17F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE955F5-EAFB-41D9-B061-E3BF37D17F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE955F5-EAFB-41D9-B061-E3BF37D17F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE955F5-EAFB-41D9-B061-E3BF37D17F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4AE0E4-49AB-4898-8907-28AADB4669E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4AE0E4-49AB-4898-8907-28AADB4669E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4AE0E4-49AB-4898-8907-28AADB4669E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4AE0E4-49AB-4898-8907-28AADB4669E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
