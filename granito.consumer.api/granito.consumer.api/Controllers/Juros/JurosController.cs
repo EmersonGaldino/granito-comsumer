@@ -15,7 +15,7 @@ public class JurosController : ApiBaseController
    private  IJurosService service => GetService<IJurosService>();
    private IMapper Mapper => GetService<IMapper>();
    
-   [HttpPost]
+   [HttpPost("calculajuros")]
    [SwaggerOperation(Summary = "Calculo",
       Description = "Calculo o juros de acordo com os messes passado.")]
    [SwaggerResponse(200, "Juros calculado.", typeof(SuccessResponse<BaseModelView<JurosModelView>>))]
