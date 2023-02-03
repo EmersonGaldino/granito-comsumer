@@ -27,7 +27,7 @@ public class JurosService : IJurosService
         return Calculate(model, juros.data.value);
     }
 
-    private JurosEntity Calculate(JurosEntity model, int juros)
+    public JurosEntity Calculate(JurosEntity model, int juros)
     {
         var taxa = Convert.ToDouble(juros) / 100;
         var total = (model.ValueInitial * Math.Pow((1 + taxa), model.Months) / model.Months) * model.Months;
