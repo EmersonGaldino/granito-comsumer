@@ -1,12 +1,28 @@
-var builder = WebApplication.CreateBuilder(args);
+using granito.bootstrapper.Configurations.AutoMapper;
+using granito.bootstrapper.Configurations.Cors;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+var provider = services.BuildServiceProvider();
+var configuration = provider.GetRequiredService<IConfiguration>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+services.AddAutoMapperConfiguration();
+services.AddAutoMapperModelViewConfiguration();
+
+LoggerBuilder.ConfigureLogging();
+
+services.AddProtectedControllers();
+services.AddServices(configuration);
+services.AddCors();
+services.AddSwagger();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -17,9 +33,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCorsConfig();
 app.UseAuthorization();
-
-app.MapControllers();
+app.UseAuthentication();
+app.UseRouting();
+app.UseSwaggerConfig();
+app.UseEndpointsConfig();
+app.UseHttpsRedirection();
 
 app.Run();
