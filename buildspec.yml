@@ -2,7 +2,7 @@ version: 0.2
 
 env:
     variables:
-        PROJECT: granito.consumer.api
+        PROJECT: granito-consumer
 
 phases:   
     pre_build:
@@ -19,7 +19,7 @@ phases:
     post_build:
         commands:
             - echo Publish started on `date`
-            - dotnet publish -c Release  -r linux-x64 -o ./build_output ./granito.consumer.api/granito.consumer.api.csproj --self-contained false
+            - dotnet publish -c Release  -r linux-x64 -o ./build_output ./granito-consumer/granito.consumer.api.csproj --self-contained false
 
 artifacts:
     files:
