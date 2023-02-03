@@ -21,10 +21,12 @@ public class JurosController : ApiBaseController
    [SwaggerResponse(200, "Juros calculado.", typeof(SuccessResponse<BaseModelView<JurosModelView>>))]
    [SwaggerResponse(400, "Não foi possível calcular o juros.", typeof(BadResponse))]
    [SwaggerResponse(500, "Erro no rastreamento da pilha.", typeof(BadResponse))]
-   public async Task<IActionResult> Get([FromBody] JurosViewModel model) => await AutoResult(async () => new BaseModelView<JurosModelView>
+   public async Task<IActionResult> Post([FromBody] JurosViewModel model) => await AutoResult(async () => new BaseModelView<JurosModelView>
    {
       Data = Mapper.Map<JurosModelView>(await service.Post(Mapper.Map<JurosEntity>(model))),
       Message = "Calculo de juros efetuado com sucesso.",
       Success = true
    });
+   
+   
 }
