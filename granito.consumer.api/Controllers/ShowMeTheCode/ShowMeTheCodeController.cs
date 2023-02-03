@@ -19,12 +19,14 @@ public class ShowMeTheCodeController : ApiBaseController
         {
             new()
             {
-                Link = "https://github.com/EmersonGaldino/granito-comsumer",
+                Link = "",
+                Repository = "https://github.com/EmersonGaldino/granito-comsumer",
                 Description = "Esse repositorio chama a api principal, apos resposta calcula o juros"
             },
             new()
             {
-                Link = "https://github.com/EmersonGaldino/granito-producer",
+                Link = "http://granitoproducer-env.eba-8mxxzp97.us-east-1.elasticbeanstalk.com",
+                Repository = "https://github.com/EmersonGaldino/granito-producer",
                 Description = "Esse repositorio gera token de acesso e devolve a taxa de juros para o consumer"
             }
         },
