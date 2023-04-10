@@ -55,4 +55,6 @@ public class JurosService : IJurosService
         }, ETypeMethods.POST);
         return response.data.token;
     }
+
+    
 }
