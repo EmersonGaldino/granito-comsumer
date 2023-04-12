@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace granito.bootstrapper.Configurations.Constants;
+namespace granito.consumer.bootstrapper.Configurations.Constants;
 
 public static class Constant
 {
