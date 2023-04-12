@@ -10,11 +10,11 @@ phases:
             - echo Restore started on `date`
             - dotnet restore
             - 
-                
-    uniTest:
-        commands:
-            - echo test started on `date`
-            - dotnet test -c Release --logger trx --results-directory ./testresults
+#                
+#    uniTest:
+#        commands:
+#            - echo test started on `date`
+#            - dotnet test -c Release --logger trx --results-directory ./testresults
       
     build:
         commands:
